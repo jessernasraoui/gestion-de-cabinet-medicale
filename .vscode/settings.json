@@ -1,0 +1,17 @@
+{
+    "git.useForcePushWithLease": true,
+    "angular.disableAutomaticNgcc": false,
+    "git.ignoreWindowsGit27Warning": false,
+    "git.ignoreSubmodules": false,
+    "git.ignoreRebaseWarning": false,
+    "git.ignoreMissingGitWarning": false,
+    "git.ignoreLimitWarning": false,
+    "git.ignoreLegacyWarning": false,
+    "git.enableStatusBarSync": true,
+    "git.enableSmartCommit": false,
+    "git.enabled": true,
+    "git.allowForcePush": true,
+    "git.allowNoVerifyCommit": false,
+    "git.decorations.enabled": false,
+    "git.enableCommitSigning": true
+}

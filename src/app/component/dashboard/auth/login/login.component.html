@@ -1,0 +1,64 @@
+<!-- Section: Design Block -->
+<section class="text-center img-bcg text-lg-start">
+  <style>
+    .cascading-right {
+      margin-right: -10px;
+    }
+
+    @media (max-width: 991.98px) {
+      .cascading-right {
+        margin-right: 0;
+      }
+    }
+  </style>
+
+  <!-- Jumbotron -->
+  <div class="container  py-4">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="card cascading-right" style="
+            background: hsla(0, 0%, 100%, 0.55);
+            backdrop-filter: blur(30px);
+            ">
+          <div class="card-body p-5 shadow-5 text-center"  >
+            <h2 class="fw-bold mb-5">Welcome Back</h2>
+<div class="alert alert-danger" *ngIf="errorMessage"> {{errorMessage}} </div>
+            <form  [formGroup] = "form">
+              <div class="form-outline mb-2">
+                <label class="form-label" for="form3Example4">Role</label>
+
+              <input type="text" formControlName="role" id="form3Example4" class="form-control" />
+            </div>
+            
+
+              <!-- Username input -->
+              <div class="form-outline mb-4">
+                  <label class="form-label"  for="form3Example3">Username</label>
+
+                <input type="text" formControlName="username" id="form3Example3" class="form-control" />
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4">Password</label>
+
+                <input type="password" formControlName="password" id="form3Example4" class="form-control" />
+              </div>
+
+             
+
+              <!-- Submit button -->
+              <button type="submit" (click)="login()" class="btn btn-primary btn-block mb-4">
+               Login
+              </button>
+
+            
+            </form>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<div mat-dialog-content>
+  <p style="color:blue;"> <b>etes-vous sur de vouloir supprimer cette consultation ?</b> </p>
+  
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button  (click)="annuler()">Annuler</button>
+  <button mat-raised-button color="accent" (click)="supprimerConsultation()" cdkFocusInitial>Supprimer</button>
+</div>

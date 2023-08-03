@@ -1,0 +1,37 @@
+<h2 style="font-weight: 700;" class="m-3" color="primary"> {{title}}</h2>
+
+
+<mat-dialog-content style="width:400px;height: 500px; background-color: aquamarine;" [formGroup]="form">
+<mat-grid-list cols="3" class="custom p-1">
+        <mat-form-field >
+            <mat-label>Nom Patient</mat-label>
+            <input matInput placeholder="Nom patient"  formControlName="nom" required>
+          </mat-form-field>
+        
+          <mat-form-field  >
+              <mat-label>Symptomes</mat-label>
+              <textarea matInput formControlName="raisons"
+              cdkTextareaAutosize
+              #autosize="cdkTextareaAutosize"
+              cdkAutosizeMinRows="1"
+              cdkAutosizeMaxRows="6"></textarea>
+            </mat-form-field>
+            <mat-form-field >
+              <mat-label>Traitement</mat-label>
+              <input matInput placeholder="Traitement"  formControlName="traitement" required>
+            </mat-form-field>
+            <mat-form-field >
+              <mat-label>date de la consultation</mat-label>
+              <input type="date" matInput placeholder="pat@example.com"  formControlName="date" required>
+            </mat-form-field>
+        <div mat-dialog-actions>
+             <button  mat-raised-button color="primary"  class="custombtnn"  (click)="enregistrer()"> {{buttonName}} </button>
+</div>
+       
+
+       
+    
+   
+      
+</mat-grid-list >
+</mat-dialog-content>

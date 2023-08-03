@@ -1,0 +1,19 @@
+.mat-grid-list{
+    text-align: center;
+    
+}
+.custombtnn{
+    justify-content: end;
+    margin-left: 15px;
+}
+.mb-3{padding:50px;}
+.custom{
+
+    height: 200px;
+}
+
+.mat-form-field{
+    border-radius: 8px;
+    width:100%;
+    
+}
